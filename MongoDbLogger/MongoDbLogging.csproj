@@ -6,6 +6,11 @@
     <Nullable>enable</Nullable>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Title>logging to mongodb</Title>
+    <Description>logging to mongodb</Description>
+    <PackageProjectUrl>https://github.com/crisissettled/MongoDBLogging</PackageProjectUrl>
+    <AssemblyVersion>1.0.0.2</AssemblyVersion>
+    <FileVersion>1.0.0.2</FileVersion>
+    <Version>1.0.0.2</Version>
   </PropertyGroup>
 
   <ItemGroup>
