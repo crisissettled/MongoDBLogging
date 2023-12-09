@@ -1,8 +1,13 @@
 
+using MongoDbLogging;
+
 namespace test_api {
     public class Program {
         public static void Main(string[] args) {
             var builder = WebApplication.CreateBuilder(args);
+
+            builder.Logging.ClearProviders()
+                .AddMongoDbLogger(builder.Configuration.GetSection("MongoDbLogging"), "dev", "test_api");
 
             // Add services to the container.
 

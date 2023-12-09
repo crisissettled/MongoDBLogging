@@ -6,7 +6,6 @@ namespace test_api.Controllers {
     [ApiController]
     public class TestController : ControllerBase {
 
-
         private readonly ILogger _logger;
         public TestController(ILogger<TestController> logger) {
             _logger = logger;
