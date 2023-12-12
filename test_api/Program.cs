@@ -1,5 +1,6 @@
 
 using MongoDbLogging;
+using System.Reflection;
 
 namespace test_api {
     public class Program {
@@ -7,7 +8,7 @@ namespace test_api {
             var builder = WebApplication.CreateBuilder(args);
 
             builder.Logging.ClearProviders()
-                .AddMongoDbLogger(builder.Configuration.GetSection("MongoDbLogging"), "dev", "test_api");
+                .AddMongoDbLogger(builder.Configuration.GetSection("MongoDbLogging"),Assembly.GetExecutingAssembly());
 
             // Add services to the container.
 
